@@ -10,6 +10,17 @@ html, body, #root {
   border: 2px solid red;
 }
 
+.cabecalho{
+  border: 1px solid red;
+  height: 80px;
+
+}
+
+.rodape{
+  
+  border: 1px solid red;
+}
+
 
 
 

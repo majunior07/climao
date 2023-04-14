@@ -3,7 +3,15 @@
 function App(){ 
   return (
     <div>
-      <h1>Projeto</h1>
+      <div className="cabecalho">
+        <a>
+            previsão_tempo > web
+        </a>
+      </div>
+
+      <di className="rodape">
+        <h1>Rodapé</h1>
+      </di>
     </div>
   );
 }
