@@ -1,17 +1,30 @@
-
+import {FaMicrosoft, FaQuestionCircle} from 'react-icons/fa'
 
 function App(){ 
   return (
     <div>
       <div className="cabecalho">
-        <a>
+
+      <FaMicrosoft>
+
+      </FaMicrosoft>
+        <a className='previsao'>           
             previsão_tempo > web
         </a>
+
+        <FaQuestionCircle>
+
+        </FaQuestionCircle>
+
       </div>
 
-      <di className="rodape">
+      <div className="principla">
+        Principal
+      </div>
+
+      <div className="rodape">
         <h1>Rodapé</h1>
-      </di>
+      </div>
     </div>
   );
 }
