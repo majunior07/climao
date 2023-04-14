@@ -1,4 +1,4 @@
-import {FaMicrosoft, FaQuestionCircle} from 'react-icons/fa'
+import {FaMicrosoft, FaQuestionCircle, FaExpandAlt, FaChevronRight, FaCloudShowersHeavy} from 'react-icons/fa'
 
 function App(){ 
   return (
@@ -9,17 +9,33 @@ function App(){
 
       </FaMicrosoft>
         <a className='previsao'>           
-            previsão_tempo > web
+            previsão_tempo 
+            <FaChevronRight>
+            </FaChevronRight>
+           <span>web</span>
         </a>
 
-        <FaQuestionCircle>
+        <FaExpandAlt>
+        </FaExpandAlt>
 
+        <FaQuestionCircle>
         </FaQuestionCircle>
+
+        <a>
+          Fazer logon
+        </a>
 
       </div>
 
       <div className="principla">
-        Principal
+        <div className='caixa'>
+          <div className="busca">
+            <FaCloudShowersHeavy>
+            </FaCloudShowersHeavy>
+            <h1>CLIMÃO.COM</h1>
+          </div>
+        </div>
+        
       </div>
 
       <div className="rodape">
