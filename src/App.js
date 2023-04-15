@@ -1,55 +1,60 @@
+
 import react from 'react';
 
 import {FaMicrosoft, FaQuestionCircle, FaAngleRight, FaExpandAlt, FaCloudShowersHeavy} from 'react-icons/fa'
 import { IoMdHome, IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { SiAdobecreativecloud } from 'react-icons/si';
 
+
 function App(){ 
   return (
     <div>
-      <div className="cabecalho">
- 
+      <div className="cabecalho"> 
       
-      <FaMicrosoft>
-      </FaMicrosoft>
+          <FaMicrosoft>
+          </FaMicrosoft>
 
-        <a href="">           
-            previsão_tempo 
-        </a>
+            <a href="">           
+                previsão_tempo 
+            </a>
 
-        <FaAngleRight>
-        </FaAngleRight>
+            <FaAngleRight>
+            </FaAngleRight>
 
-         <span>web</span> 
+            <span>web</span> 
 
-      <a href="">
+          <a href="">
 
-         <FaExpandAlt>
-         </FaExpandAlt>
+            <FaExpandAlt>
+            </FaExpandAlt>
 
-        <FaQuestionCircle>
-        </FaQuestionCircle>
+            <FaQuestionCircle>
+            </FaQuestionCircle>
 
-      
-        Fazer logon
-      </a>
+          
+            Fazer logon
+          </a>
 
       </div>
       
       <div className="principla">
+        
         <div className='central'>
+
           <div className='busca'>
             <FaCloudShowersHeavy>
             </FaCloudShowersHeavy>
             <span>CLIMÃO.COM</span>
           </div>
+
         </div>
+        
       </div>
 
       <div className="rodape">
 
         <span className='adobe'>Criado com o Adobe XD</span>
-        <a>
+        <a href="">
           <SiAdobecreativecloud>
           </SiAdobecreativecloud>
         
@@ -59,11 +64,12 @@ function App(){
           </IoIosArrowBack>
         </a>
         <span>1 de 2</span>
-        <a>
+        <a href="">
           <IoIosArrowForward>
           </IoIosArrowForward>
         </a>
       </div>
+
     </div>
   );
 }
