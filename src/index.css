@@ -12,7 +12,11 @@ html, body, #root {
 .cabecalho{
   border-bottom: 1px solid #eee;
   margin: 10px 10px;
+<<<<<<< HEAD
   height: 50px;
+=======
+  height: 70px;
+>>>>>>> 0fc91907db76f0a84b2c591857f9c9fef681faf5
   display: flex;
   align-items:center;
   justify-content: space-between;
@@ -26,6 +30,7 @@ html, body, #root {
 
 .principla{
   border-bottom: 1px solid #eee;
+<<<<<<< HEAD
   height: 470px;
 }
 
@@ -38,6 +43,9 @@ html, body, #root {
 .busca{
   background-color: #2BCBBA;
   height: 45px;
+=======
+  height: 750px;
+>>>>>>> 0fc91907db76f0a84b2c591857f9c9fef681faf5
 }
 
 .rodape{  
@@ -51,6 +59,17 @@ html, body, #root {
 
 .adobe{
   font-size: 12px;
+}
+
+.caixa {
+  border: 1px solid red;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  height: 600px;
+}
+
+.busca{ 
+  font-size: 10px;
 }
 
 
