@@ -12,26 +12,45 @@ html, body, #root {
 .cabecalho{
   border-bottom: 1px solid #eee;
   margin: 10px 10px;
-  height: 70px;
-  align-items: center;
-  justify-content: space-between;
+  height: 50px;
   display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-direction: row;
+  
 }
 
 .previsao {
-  margin: 0;
-  margin-top: 0;  
+  
 }
 
 .principla{
-  border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  height: 455px;
+  height: 470px;
+}
+
+.central{
+  margin: 40px 190px;
+  background-color: #0000000F;  
+  height: 470px;
+}
+
+.busca{
+  background-color: #2BCBBA;
+  height: 45px;
 }
 
 .rodape{  
   border-top: 1px solid #eee;
-  height: 80px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.adobe{
+  font-size: 12px;
 }
 
 

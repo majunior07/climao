@@ -1,29 +1,68 @@
-import {FaMicrosoft, FaQuestionCircle} from 'react-icons/fa'
+import react from 'react';
+
+import {FaMicrosoft, FaQuestionCircle, FaAngleRight, FaExpandAlt, FaCloudShowersHeavy} from 'react-icons/fa'
+import { IoMdHome, IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { SiAdobecreativecloud } from 'react-icons/si';
 
 function App(){ 
   return (
     <div>
       <div className="cabecalho">
-
+ 
+      
       <FaMicrosoft>
-
       </FaMicrosoft>
-        <a className='previsao'>           
-            previsão_tempo > web
+
+        <a href="">           
+            previsão_tempo 
         </a>
 
-        <FaQuestionCircle>
+        <FaAngleRight>
+        </FaAngleRight>
 
+         <span>web</span> 
+
+      <a href="">
+
+         <FaExpandAlt>
+         </FaExpandAlt>
+
+        <FaQuestionCircle>
         </FaQuestionCircle>
 
-      </div>
+      
+        Fazer logon
+      </a>
 
+      </div>
+      
       <div className="principla">
-        Principal
+        <div className='central'>
+          <div className='busca'>
+            <FaCloudShowersHeavy>
+            </FaCloudShowersHeavy>
+            <span>CLIMÃO.COM</span>
+          </div>
+        </div>
       </div>
 
       <div className="rodape">
-        <h1>Rodapé</h1>
+
+        <span className='adobe'>Criado com o Adobe XD</span>
+        <a>
+          <SiAdobecreativecloud>
+          </SiAdobecreativecloud>
+        
+          <IoMdHome>
+          </IoMdHome>
+          <IoIosArrowBack>
+          </IoIosArrowBack>
+        </a>
+        <span>1 de 2</span>
+        <a>
+          <IoIosArrowForward>
+          </IoIosArrowForward>
+        </a>
       </div>
     </div>
   );
