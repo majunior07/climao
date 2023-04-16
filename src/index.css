@@ -9,42 +9,57 @@ html, body, #root {
   width: 100%;
 }
 
-.cabecalho{
-  border-bottom: 1px solid #eee;
-  margin: 10px 10px;
-  height: 50px;
-  height: 70px;
+.cabecalho1{
+  margin: 20px;
+  height: 10px;
+  font-size: 15px;
   display: flex;
-  align-items:center;
-  justify-content: space-between;
+  align-items: center;
+  justify-content:flex-start;
   flex-direction: row;
-  
+  float: left;
 }
 
-.previsao {
-  
+.cabecalho2{
+  margin: 20px;
+  height: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  flex-direction: row;
+  float: right;
 }
 
-.principla{
-  border-bottom: 1px solid #eee;
-  height: 470px;
-}
 
-.central{
-  margin: 40px 190px;
+.principal{
+  border-top: 2px solid #eee;
+  height: 550px;
+  clear: both;
   background-color: #0000000F;  
-  height: 470px;
 }
 
 .busca{
   background-color: #2BCBBA;
-  height: 45px;
-  height: 750px
+  height: 55px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-direction: row;
+  border-radius: 4;
 }
+
+.central{
+  margin: 40px 190px;
+  background-color: #FFF;
+  height: 400px;
+}
+
 
 .rodape{  
   border-top: 1px solid #eee;
-  height: 50px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,16 +70,9 @@ html, body, #root {
   font-size: 12px;
 }
 
-.caixa {
-  border: 1px solid red;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  height: 600px;
-}
 
-.busca{ 
-  font-size: 10px;
-}
+
+
 
 
 
