@@ -11,7 +11,7 @@ html, body, #root {
 
 .cabecalho1{
   margin: 20px;
-  height: 10px;
+  height: 20px;
   font-size: 15px;
   display: flex;
   align-items: center;
@@ -22,46 +22,33 @@ html, body, #root {
 
 .cabecalho2{
   margin: 20px;
-  height: 10px;
+  height: 20px;
   font-size: 15px;
   display: flex;
   align-items: center;
   justify-content:flex-end;
   flex-direction: row;
   float: right;
-
   }
-
 
 .principal{
   border-top: 2px solid #eee;
-  height: 550px;
+  height: 800px;
+  width: 70%;
+  margin: 0 250px 180px;
   clear: both;
   background-color: #0000000F;  
-}
+  }
 
 .busca1{
   background-color: #2BCBBA;
-  height: 55px;
-  width: 1166px;
-  color: #FFF;
-  display: flex;
-  align-items: center;
-  justify-content:left;
-  flex-direction: row;
-  border-radius: 4;
-  float: left;
-}
-
-.busca2{
-  background-color: #2BCBBA;
-  height: 55px;
+  height: 65px;
+  margin-top: 40px;
   color: #FFF;
   display: flex;
   align-items: center;
   justify-content:space-between;
   flex-direction: row;
-  float: right;
 }
 
 input{
@@ -70,20 +57,32 @@ input{
   width: 200px;
 }
 
-
 .central{
-  margin: 40px 190px;
+  margin: 50px 90px 130px;
   background-color: #FFF;
-  height: 400px;
+  height: 565px;
+}
+
+.esquerda{
+  border: 1px solid black;
+  float: left;
+  height: 100%;
+  width: 55%;
+}
+
+.direita{
+  border: 1px solid blue;
+  float: right;
+  height: 100%;
+  width: 45%;
 }
 
 
 .rodape{  
-  border-top: 1px solid #eee;
-  height: 90px;
+  height: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
   flex-direction: row;
 }
 

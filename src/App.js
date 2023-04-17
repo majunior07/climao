@@ -14,37 +14,56 @@ function App(){
           <IoIosArrowForward></IoIosArrowForward>
           <span>web</span>
         </div>
+      
         <div className="cabecalho2"> 
           <select name='padrao'>Padrão
-            <option value="25%">25%</option>
-            <option value="50%">50%</option>
-            <option value="75%">75%</option>
-            <option value="100%">100%</option>
-            <option value="150%">150%</option>
-            <option value="200%">200%</option>
+          <option value="25%">25%</option>
+          <option value="50%">50%</option>
+          <option value="75%">75%</option>
+          <option value="100%">100%</option>
+          <option value="150%">150%</option>
+          <option value="200%">200%</option>
           </select>       
           <a href="">
-            <FaExpandAlt></FaExpandAlt>
-            <FaQuestionCircle></FaQuestionCircle>
-            Fazerlogon</a>
+          <FaExpandAlt></FaExpandAlt>
+          <FaQuestionCircle></FaQuestionCircle>
+          Fazerlogon</a>
         </div>
 
         <div className='principal'>
             <div className='busca1'>
                <FaCloudShowersHeavy></FaCloudShowersHeavy>
-               <span>CLIMÃO.COM</span>
-           </div>
-            <div className='busca2'>
+               <span className='climao'>CLIMÃO.COM</span>
                <input placeholder='Buscar cidade' className="input"></input>
-            </div>
-            <div className='central'>
-              central
-            </div>     
-            <div className='rodape'>
-              <span>Criado com o Adobe XD</span>
-            </div> 
+            </div>        
+              <div className='central'>
+                  <div className='esquerda'>
+                    esquerda
+                  </div>
+                  <div className='direita'>
+                    <ul>
+                      <li>azul</li>
+                      <li>laranja</li>
+                      <li>verde</li>
+                      <li>roxo</li>
+                      <li>vermelho claro</li>
+                    </ul>
+                  </div>
+              </div>     
+              <div className='rodape'>
+                <a href=''>
+                  <IoMdHome></IoMdHome>
+                </a>
+                <a href=''>
+                  <IoIosArrowBack></IoIosArrowBack>
+                </a>
+                  <span>1 de 2</span>
+                    <a>
+                    <IoIosArrowForward></IoIosArrowForward>
+                </a>
+              </div>
         </div>
-      </div>
+    </div>
   );
 }
 
