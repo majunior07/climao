@@ -29,7 +29,8 @@ html, body, #root {
   justify-content:flex-end;
   flex-direction: row;
   float: right;
-}
+
+  }
 
 
 .principal{
@@ -39,7 +40,20 @@ html, body, #root {
   background-color: #0000000F;  
 }
 
-.busca{
+.busca1{
+  background-color: #2BCBBA;
+  height: 55px;
+  width: 1166px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content:left;
+  flex-direction: row;
+  border-radius: 4;
+  float: left;
+}
+
+.busca2{
   background-color: #2BCBBA;
   height: 55px;
   color: #FFF;
@@ -47,8 +61,15 @@ html, body, #root {
   align-items: center;
   justify-content:space-between;
   flex-direction: row;
-  border-radius: 4;
+  float: right;
 }
+
+input{
+  border-radius: 15px;
+  height: 30px;
+  width: 200px;
+}
+
 
 .central{
   margin: 40px 190px;

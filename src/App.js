@@ -15,7 +15,14 @@ function App(){
           <span>web</span>
         </div>
         <div className="cabecalho2"> 
-          <option>100%</option>
+          <select name='padrao'>Padrão
+            <option value="25%">25%</option>
+            <option value="50%">50%</option>
+            <option value="75%">75%</option>
+            <option value="100%">100%</option>
+            <option value="150%">150%</option>
+            <option value="200%">200%</option>
+          </select>       
           <a href="">
             <FaExpandAlt></FaExpandAlt>
             <FaQuestionCircle></FaQuestionCircle>
@@ -23,10 +30,12 @@ function App(){
         </div>
 
         <div className='principal'>
-            <div className='busca'>
+            <div className='busca1'>
                <FaCloudShowersHeavy></FaCloudShowersHeavy>
                <span>CLIMÃO.COM</span>
-               <input placeholder='Buscar cidade'></input>
+           </div>
+            <div className='busca2'>
+               <input placeholder='Buscar cidade' className="input"></input>
             </div>
             <div className='central'>
               central
