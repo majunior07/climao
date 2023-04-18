@@ -9,35 +9,32 @@ html, body, #root {
   width: 100%;
 }
 
+.cabecalho{
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .cabecalho1{
   margin: 20px;
   height: 20px;
   font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content:flex-start;
-  flex-direction: row;
-  float: left;
 }
 
 .cabecalho2{
   margin: 20px;
   height: 20px;
   font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content:flex-end;
-  flex-direction: row;
-  float: right;
   }
 
 .principal{
-  border-top: 2px solid #eee;
   height: 800px;
   width: 70%;
-  margin: 0 250px 180px;
+  margin: 0 200px 180px;
   clear: both;
-  background-color: #0000000F;  
+  background-color: #0000000F; 
   }
 
 .busca1{
@@ -77,6 +74,47 @@ input{
   width: 45%;
 }
 
+.dias{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.azul{
+  height: 85px;
+  width: 300px;
+  background-color: blue;
+}
+
+.laranja{
+  height: 85px;
+  width: 300px;
+  margin-top: 15px;
+  background-color: orange;
+}
+
+.verde{
+  height: 85px;
+  width: 300px;
+  margin-top: 15px;
+  background-color: green;
+}
+
+.roxo{
+  height: 85px;
+  width: 300px;
+  margin-top: 15px;
+  background-color: purple;
+}
+
+.vermelho{
+  height: 85px;
+  width: 300px;
+  margin-top: 15px;
+  background-color: rgb(221, 21, 21);
+}
 
 .rodape{  
   height: 30px;

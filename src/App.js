@@ -7,27 +7,29 @@ import { SiAdobecreativecloud } from 'react-icons/si';
 
 function App(){ 
   return (
-      <div>
-        <div className='cabecalho1'>
-          <FaMicrosoft></FaMicrosoft>
-          <a href="">previsao_tempo</a>
-          <IoIosArrowForward></IoIosArrowForward>
-          <span>web</span>
-        </div>
-      
-        <div className="cabecalho2"> 
-          <select name='padrao'>Padrão
-          <option value="25%">25%</option>
-          <option value="50%">50%</option>
-          <option value="75%">75%</option>
-          <option value="100%">100%</option>
-          <option value="150%">150%</option>
-          <option value="200%">200%</option>
-          </select>       
-          <a href="">
-          <FaExpandAlt></FaExpandAlt>
-          <FaQuestionCircle></FaQuestionCircle>
-          Fazerlogon</a>
+      <div> 
+        <div className='cabecalho'>
+          <div className='cabecalho1'>
+            <FaMicrosoft></FaMicrosoft>
+            <a href="">previsao_tempo</a>
+            <IoIosArrowForward></IoIosArrowForward>
+            <span>web</span>
+          </div>
+        
+          <div className="cabecalho2"> 
+            <select name='padrao'>Padrão
+            <option value="25%">25%</option>
+            <option value="50%">50%</option>
+            <option value="75%">75%</option>
+            <option value="100%">100%</option>
+            <option value="150%">150%</option>
+            <option value="200%">200%</option>
+            </select>       
+            <a href="">
+            <FaExpandAlt></FaExpandAlt>
+            <FaQuestionCircle></FaQuestionCircle>
+            Fazerlogon</a>
+          </div>
         </div>
 
         <div className='principal'>
@@ -41,12 +43,12 @@ function App(){
                     esquerda
                   </div>
                   <div className='direita'>
-                    <ul>
-                      <li>azul</li>
-                      <li>laranja</li>
-                      <li>verde</li>
-                      <li>roxo</li>
-                      <li>vermelho claro</li>
+                    <ul className='dias'>
+                      <li className="azul">azul</li>
+                      <li className='laranja'>laranja</li>
+                      <li className='verde'>verde</li>
+                      <li className='roxo'>roxo</li>
+                      <li className='vermelho'>vermelho claro</li>
                     </ul>
                   </div>
               </div>     
