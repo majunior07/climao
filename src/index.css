@@ -14,45 +14,67 @@ html, body, #root {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
+  
 }
 
 .cabecalho1{
+  list-style: none;
   margin: 20px;
-  height: 20px;
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .cabecalho2{
+  list-style: none;
   margin: 20px;
-  height: 20px;
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
   }
 
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .principal{
-  height: 800px;
-  width: 70%;
-  margin: 0 200px 180px;
-  clear: both;
+  height: 900px;
+  width: 70%;  
+  margin-top: 30px;
   background-color: #0000000F; 
   }
 
 .busca1{
   background-color: #2BCBBA;
-  height: 65px;
-  margin-top: 40px;
+  list-style: none;
+  height: 70px;
   color: #FFF;
   display: flex;
   align-items: center;
-  justify-content:space-between;
-  flex-direction: row;
+  justify-content: space-between;
 }
+
+.climao{
+  margin-left: 70px;
+  font-size: 22px;
+}
+
 
 input{
   border-radius: 15px;
+  margin-right: 50px;
+  padding: 10px;
   height: 30px;
-  width: 200px;
+  width: 250px;  
 }
+
 
 .central{
   margin: 50px 90px 130px;
@@ -68,50 +90,53 @@ input{
 }
 
 .direita{
-  border: 1px solid blue;
-  float: right;
+  background-color: #0000000F; 
   height: 100%;
   width: 45%;
-}
-
-.dias{
-  list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
+.dias{
+  list-style: none;  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .azul{
-  height: 85px;
-  width: 300px;
+  height: 99px;
+  width: 470px;
   background-color: blue;
 }
 
 .laranja{
-  height: 85px;
-  width: 300px;
+  height: 99px;
+  width: 470px;
   margin-top: 15px;
   background-color: orange;
 }
 
 .verde{
-  height: 85px;
-  width: 300px;
+  height: 99px;
+  width: 470px;
   margin-top: 15px;
   background-color: green;
 }
 
 .roxo{
-  height: 85px;
-  width: 300px;
+  height: 99px;
+  width: 470px;
   margin-top: 15px;
   background-color: purple;
 }
 
 .vermelho{
-  height: 85px;
-  width: 300px;
+  height: 99px;
+  width: 470px;
   margin-top: 15px;
   background-color: rgb(221, 21, 21);
 }
