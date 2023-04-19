@@ -14,23 +14,24 @@ html, body, #root {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  flex-direction: row;
 }
+
 
 .cabecalho1{
   list-style: none;
   margin: 20px;
-  font-size: 15px;
+  font-size: 15px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: row; 
 }
 
 .cabecalho2{
   list-style: none;
   margin: 20px;
-  font-size: 15px;
+  font-size: 15px;  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -79,13 +80,62 @@ input{
   margin: 50px 90px 130px;
   background-color: #FFF;
   height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .esquerda{
-  border: 1px solid black;
-  float: left;
+  border: 1px solid black;  
   height: 90%;
   width: 55%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.esquerdaCima{
+  color: #4B6584;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.esquerdaCima p {
+  font-size: 16px;
+  color: #4B6584;
+  margin-left: 30px;
+}
+
+.esquerdaCima span {
+  margin-left: 7px;
+}
+
+.direitaCima{
+  font-size: 20px;
+  color: #4B6584;
+  padding: 10px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.esquerdaMedia{
+  font-size: 180px;
+  color: #4B6584;
+  border: 1px solid red; 
+  margin-top: 0px;
+}
+
+.esquerdaMedia span{
+  margin-top: 100px
+}
+
+.esquerdaMedia p{
+ font-size: 20px;
+ color: #4B6584;
+ margin-left: 55px;
 }
 
 .direita{
@@ -93,10 +143,7 @@ input{
   background-color: #0000000F; 
   height: 90%;
   width: 45%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  
 }
 
 .dias{
@@ -119,7 +166,9 @@ input{
   width: 350px;
   margin-left: 40px;
   border-radius: 7px;
-  background-color: blue;
+  background-color: #3867D6;
+  opacity: 0.90;
+  color: #FFF;
 }
 
 .laranja{
@@ -128,7 +177,9 @@ input{
   margin-left: 40px;
   margin-top: 15px;
   border-radius: 7px;
-  background-color: orange;
+  background-color: #FA8231;
+  opacity: 0.90;
+  color: #FFF;
 }
 
 .verde{
@@ -137,7 +188,9 @@ input{
   margin-left: 40px;
   margin-top: 15px;
   border-radius: 7px;
-  background-color: green;
+  background-color: #3D9165;
+  opacity: 0.90;
+  color: #FFF;
 }
 
 .roxo{
@@ -146,7 +199,9 @@ input{
   margin-left: 40px;
   margin-top: 15px;
   border-radius: 7px;
-  background-color: purple;
+  background-color: #5F349A;
+  opacity: 0.90;
+  color: #FFF;
 }
 
 .vermelho{
@@ -155,7 +210,9 @@ input{
   margin-left: 40px;
   margin-top: 15px;
   border-radius: 7px;
-  background-color: rgb(221, 21, 21);
+  background-color: #C73D56;
+  opacity: 0.9;
+  color: #FFF;
 }
 
 .rodape{  

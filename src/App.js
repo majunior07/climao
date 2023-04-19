@@ -1,8 +1,10 @@
 import react from 'react';
 import { Link } from 'react-router-dom';
-import {FaMicrosoft, FaQuestionCircle, FaAngleRight, FaExpandAlt, FaUmbrella, FaSearch, FaTemperatureLow, FaTemperatureHigh} from 'react-icons/fa'
+import {FaMicrosoft, FaQuestionCircle, FaAngleRight, FaExpandAlt, FaUmbrella, FaSearch, FaTemperatureLow, FaTemperatureHigh } from 'react-icons/fa'
 import { WiDaySunny } from 'react-icons/wi'
 import { IoMdHome, IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { SlLocationPin } from 'react-icons/sl';
+import { TiThermometer } from 'react-icons/ti';
 import { SiAdobecreativecloud } from 'react-icons/si';
 
 
@@ -10,38 +12,40 @@ function App(){
   return (
       <div> 
         <div className='cabecalho'>
-
-          <ul className='cabecalho1'>
-            <li><FaMicrosoft></FaMicrosoft></li>
-            <li><a href="">previsao_tempo</a></li>
-            <li><IoIosArrowForward></IoIosArrowForward></li>
-            <li><span>web</span></li>
-          </ul>         
-        
-          <ul className='cabecalho2'>
-            <li>
-              <select name='padrao'>Padrão
-              <option value="25%">25%</option>
-              <option value="50%">50%</option>
-              <option value="75%">75%</option>
-              <option value="100%">100%</option>
-              <option value="150%">150%</option>
-              <option value="200%">200%</option>
-              </select>  
-            </li>
-            <li>
-              <a href=""><FaExpandAlt></FaExpandAlt></a>
-            </li>
-            <li>
-              <a href=""><FaQuestionCircle></FaQuestionCircle></a>
-            </li>
-            <li>
-              <a href="">Fazerlogon</a>
-            </li>
-
-          </ul>
+       
+            <ul className='cabecalho1'>
+              <li><FaMicrosoft></FaMicrosoft></li>
+              <li><a href="">previsao_tempo</a></li>
+              <li><IoIosArrowForward></IoIosArrowForward></li>
+              <li><span>web</span></li>
+            </ul>         
          
+          
+            <ul className='cabecalho2'>
+              <li>
+                <select name='padrao'>Padrão
+                <option value="25%">25%</option>
+                <option value="50%">50%</option>
+                <option value="75%">75%</option>
+                <option value="100%">100%</option>
+                <option value="150%">150%</option>
+                <option value="200%">200%</option>
+                </select>  
+              </li>
+              <li>
+                <a href=""><FaExpandAlt></FaExpandAlt></a>
+              </li>
+              <li>
+                <a href=""><FaQuestionCircle></FaQuestionCircle></a>
+              </li>
+              <li>
+                <a href="">Fazerlogon</a>
+              </li>
+
+            </ul>
+          
         </div>
+
         <div className='container'>
           <div className='principal'>
 
@@ -59,8 +63,29 @@ function App(){
                     
               <div className='central'>
                     <div className='esquerda'>
-                      esquerda
+                        <div className='esquerdaCima'>
+                        <SlLocationPin color='#2BCBBA'></SlLocationPin>
+                        <span>Campinas</span>
+                        <p>
+                          Quin, 10 de outubro de 2019
+                        </p>
+                        </div>
+                        <div className='direitaCima'>
+                          <FaTemperatureLow color='#2BCBBA' size={30}></FaTemperatureLow>
+                          Min. 15°
+                          <FaTemperatureHigh color='#2BCBBA' size={30} ></FaTemperatureHigh>
+                          Max 26°
+                        </div> 
+                        <div className='esquerdaMedia'>
+                          <TiThermometer color='#2BCBBA' size={40} ></TiThermometer> 
+                          <span>23°</span>                         
+                          <p>Sensação térmica 22°</p>
+                        </div> 
+                        <div className='direitaMedia'>
+                          aaaaaaaa
+                        </div>              
                     </div>
+
                     <div className='direita'>
                       <div className='dias'>
                         <div className="azul">
