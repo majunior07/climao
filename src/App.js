@@ -64,7 +64,7 @@ function App(){
                     <div className='direita'>
                       <div className='dias'>
                         <div className="azul">
-                          <ul>
+                          <ul className='mostraDias'>
                             <li>
                               <span>Sexta</span>
                             </li>                          
@@ -86,7 +86,7 @@ function App(){
                           </ul>                          
                         </div>
                         <div className='laranja'>
-                        <ul>
+                        <ul className='mostraDias'>
                             <li>
                               <span>Sexta</span>
                             </li>                          
@@ -108,7 +108,7 @@ function App(){
                           </ul>                  
                         </div>
                         <div className='verde'>
-                        <ul>
+                        <ul className='mostraDias'>
                             <li>
                               <span>Sexta</span>
                             </li>                          
@@ -130,7 +130,7 @@ function App(){
                           </ul>                  
                         </div>
                         <div className='roxo'>
-                        <ul>
+                        <ul className='mostraDias'>
                             <li>
                               <span>Sexta</span>
                             </li>                          
@@ -152,7 +152,7 @@ function App(){
                           </ul>                  
                         </div>
                         <div className='vermelho'>
-                        <ul>
+                        <ul className='mostraDias'>
                             <li>
                               <span>Sexta</span>
                             </li>                          
@@ -176,19 +176,21 @@ function App(){
                       </div>
                     </div>
                 </div>     
-                <div className='rodape'>
-                  <a href=''>
-                    <IoMdHome></IoMdHome>
-                  </a>
-                  <a href=''>
-                    <IoIosArrowBack></IoIosArrowBack>
-                  </a>
-                    <span>1 de 2</span>
-                      <a>
-                      <IoIosArrowForward></IoIosArrowForward>
-                  </a>
-                </div>
+                
           </div>
+        </div>
+
+        <div className='rodape'>
+          <a href=''>
+            <IoMdHome></IoMdHome>
+          </a>
+          <a href=''>
+            <IoIosArrowBack></IoIosArrowBack>
+          </a>
+            <span>1 de 2</span>
+          <a>
+            <IoIosArrowForward></IoIosArrowForward>
+          </a>
         </div>
     </div>
   );

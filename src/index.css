@@ -45,8 +45,8 @@ html, body, #root {
 }
 
 .principal{
-  height: 900px;
-  width: 70%;  
+  height: 550px;
+  width: 80%;  
   margin-top: 30px;
   background-color: #0000000F; 
   }
@@ -75,23 +75,23 @@ input{
   width: 250px;  
 }
 
-
 .central{
   margin: 50px 90px 130px;
   background-color: #FFF;
-  height: 565px;
+  height: 400px;
 }
 
 .esquerda{
   border: 1px solid black;
   float: left;
-  height: 100%;
+  height: 90%;
   width: 55%;
 }
 
 .direita{
+  border: 1px solid black;
   background-color: #0000000F; 
-  height: 100%;
+  height: 90%;
   width: 45%;
   display: flex;
   align-items: center;
@@ -107,51 +107,67 @@ input{
   justify-content: center;
 }
 
+.mostraDias{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+}
+
 .azul{
-  height: 99px;
-  width: 470px;
+  height: 70px;
+  width: 350px;
+  margin-left: 40px;
+  border-radius: 7px;
   background-color: blue;
 }
 
 .laranja{
-  height: 99px;
-  width: 470px;
+  height: 70px;
+  width: 350px;
+  margin-left: 40px;
   margin-top: 15px;
+  border-radius: 7px;
   background-color: orange;
 }
 
 .verde{
-  height: 99px;
-  width: 470px;
+  height: 70px;
+  width: 350px;
+  margin-left: 40px;
   margin-top: 15px;
+  border-radius: 7px;
   background-color: green;
 }
 
 .roxo{
-  height: 99px;
-  width: 470px;
+  height: 70px;
+  width: 350px;
+  margin-left: 40px;
   margin-top: 15px;
+  border-radius: 7px;
   background-color: purple;
 }
 
 .vermelho{
-  height: 99px;
-  width: 470px;
+  height: 70px;
+  width: 350px;
+  margin-left: 40px;
   margin-top: 15px;
+  border-radius: 7px;
   background-color: rgb(221, 21, 21);
 }
 
 .rodape{  
-  height: 30px;
+  border: 1px solid red;
+  height: 90px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content:center;
   flex-direction: row;
 }
 
-.adobe{
-  font-size: 12px;
-}
 
 
 
