@@ -88,7 +88,7 @@ input{
 
 .esquerda{
   border: 1px solid black;  
-  height: 90%;
+  height: 85%;
   width: 55%;
   flex-wrap: wrap;
   display: flex;
@@ -97,14 +97,14 @@ input{
 
 .esquerdaCima{
   color: #4B6584;
-  font-size: 30px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 5px;
+  margin-top: 0px;
 }
 
 .esquerdaCima p {
-  font-size: 16px;
+  font-size: 13px;
   color: #4B6584;
   margin-left: 30px;
 }
@@ -114,40 +114,45 @@ input{
 }
 
 .direitaCima{
-  font-size: 20px;
+  font-size: 13px;
   color: #4B6584;
   padding: 10px;
   margin-right: 30px;
   margin-top: 10px;
 }
 
+.direitaCima span {
+  margin-right: 0px;
+}
+
 .esquerdaMedia{
-  font-size: 180px;
+  font-size: 120px;
   color: #4B6584;
   border: 1px solid red; 
   margin-top: 0px;
 }
 
 .esquerdaMedia span{
-  margin-top: 100px
+  margin-top: 100px;
 }
 
 .esquerdaMedia p{
  font-size: 20px;
  color: #4B6584;
- margin-left: 55px;
+ margin-left: 10px;
 }
 
 .direita{
   border: 1px solid black;
   background-color: #0000000F; 
-  height: 90%;
+  height: 85%;
   width: 45%;
-  
+  margin-top: 0;
 }
 
 .dias{
   list-style: none;  
+  margin-top: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -162,7 +167,7 @@ input{
 }
 
 .azul{
-  height: 70px;
+  height: 65px;
   width: 350px;
   margin-left: 40px;
   border-radius: 7px;
@@ -172,7 +177,7 @@ input{
 }
 
 .laranja{
-  height: 70px;
+  height: 65px;
   width: 350px;
   margin-left: 40px;
   margin-top: 15px;
@@ -183,7 +188,7 @@ input{
 }
 
 .verde{
-  height: 70px;
+  height: 65px;
   width: 350px;
   margin-left: 40px;
   margin-top: 15px;
@@ -194,7 +199,7 @@ input{
 }
 
 .roxo{
-  height: 70px;
+  height: 65px;
   width: 350px;
   margin-left: 40px;
   margin-top: 15px;
@@ -205,7 +210,7 @@ input{
 }
 
 .vermelho{
-  height: 70px;
+  height: 65px;
   width: 350px;
   margin-left: 40px;
   margin-top: 15px;

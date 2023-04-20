@@ -71,13 +71,13 @@ function App(){
                         </p>
                         </div>
                         <div className='direitaCima'>
-                          <FaTemperatureLow color='#2BCBBA' size={30}></FaTemperatureLow>
-                          Min. 15°
-                          <FaTemperatureHigh color='#2BCBBA' size={30} ></FaTemperatureHigh>
-                          Max 26°
+                          <FaTemperatureLow color='#2BCBBA' size={20}></FaTemperatureLow>
+                            Min. 15°
+                          <FaTemperatureHigh color='#2BCBBA' size={20} ></FaTemperatureHigh>
+                            <span>Max 26°</span>
                         </div> 
                         <div className='esquerdaMedia'>
-                          <TiThermometer color='#2BCBBA' size={40} ></TiThermometer> 
+                          <TiThermometer color='#2BCBBA' size={28} ></TiThermometer> 
                           <span>23°</span>                         
                           <p>Sensação térmica 22°</p>
                         </div> 
