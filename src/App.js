@@ -6,218 +6,213 @@ import { IoMdHome, IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { SlLocationPin } from 'react-icons/sl';
 import { TiThermometer } from 'react-icons/ti';
 import { SiAdobecreativecloud } from 'react-icons/si';
+import { BsCloudLightning , BsCloudRain, BsCloudy } from'react-icons/bs';
+import Assets from './Assets';
 
 
 function App(){ 
   return (
-      <div> 
-        <div className='cabecalho'>
-       
-            <ul className='cabecalho1'>
-              <li><FaMicrosoft></FaMicrosoft></li>
-              <li><a href="">previsao_tempo</a></li>
-              <li><IoIosArrowForward></IoIosArrowForward></li>
-              <li><span>web</span></li>
-            </ul>         
-         
-          
-            <ul className='cabecalho2'>
-              <li>
-                <select name='padrao'>Padrão
-                <option value="25%">25%</option>
-                <option value="50%">50%</option>
-                <option value="75%">75%</option>
-                <option value="100%">100%</option>
-                <option value="150%">150%</option>
-                <option value="200%">200%</option>
-                </select>  
-              </li>
-              <li>
-                <a href=""><FaExpandAlt></FaExpandAlt></a>
-              </li>
-              <li>
-                <a href=""><FaQuestionCircle></FaQuestionCircle></a>
-              </li>
-              <li>
-                <a href="">Fazerlogon</a>
-              </li>
-
-            </ul>
-          
-        </div>
-
-        <div className='container'>
-          <div className='principal'>
-
-              <ul className='busca1'>
-                <li className='climao'>
-                  <FaUmbrella></FaUmbrella>
-                  <span>CLIMÃO.COM</span>
-                </li>                
-                <li>
-                  <input placeholder='Buscar cidade' className="input"></input>  
-                  <FaSearch className='FaSearch'></FaSearch>              
-                </li>
-                
+        <div> 
+            <header className='header'>
+              <ul className='menu1'>
+                <li><a href=''><FaMicrosoft size={18}></FaMicrosoft></a></li>
+                <li><a href="">previsao_tempo</a></li>
+                <li><IoIosArrowForward></IoIosArrowForward></li>
+                <li><span>Web</span></li>
               </ul>
-                    
+              <ul className='menu2'>
+                <li> <select name='select'>
+                 <option value="Pdrão">Padrão</option>
+                  <option value="25%">25%</option>
+                  <option value="50%">50%</option>
+                  <option value="75%">75%</option>
+                  <option value="100%">100%</option>
+                  <option value="150%">150%</option>
+                  <option value="200%">200%</option>
+                  </select>  
+                </li>
+                <li>
+                  <a href=""><FaExpandAlt size={17}></FaExpandAlt></a>
+                </li>
+                <li>
+                  <a href=""><FaQuestionCircle size={17}></FaQuestionCircle></a>
+                </li>
+                <li>
+                  <a href="">Fazer logon</a>
+                </li>
+              </ul>
+            </header>
+            
+            <div className='container'>
+              <div className='climao'>
+                  <ul>
+                    <li>
+                      <FaUmbrella size={25}></FaUmbrella>
+                    </li>
+                    <li>
+                      <span>CLIMÃO.COM</span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input  className='input' placeholder='Buscar cidade'></input>                                  
+                    </li>
+                    <li>
+                      <FaSearch size={18}></FaSearch>
+                    </li>
+                  </ul>
+              </div>
               <div className='central'>
-                    <div className='esquerda'>
-                        <div className='esquerdaCima'>
-                        <SlLocationPin color='#2BCBBA'></SlLocationPin>
-                        <span>Campinas</span>
-                        <p>
-                          Quin, 10 de outubro de 2019
-                        </p>
-                        </div>
-                        <div className='direitaCima'>
-                          <FaTemperatureLow color='#2BCBBA' size={20}></FaTemperatureLow>
-                            Min. 15°
-                          <FaTemperatureHigh color='#2BCBBA' size={20} ></FaTemperatureHigh>
-                            <span>Max 26°</span>
-                        </div> 
-                        <div className='esquerdaMedia'>
-                          <TiThermometer color='#2BCBBA' size={28} ></TiThermometer> 
-                          <span>23°</span>                         
-                          <p>Sensação térmica 22°</p>
-                        </div> 
-                        <div className='direitaMedia'>
-                          aaaaaaaa
-                        </div>              
+                <div className='esquerda'>
+                  <div className='esquerdaCima'>
+                    climao
+                  </div>
+                  <div className='esquerdaMeio'>
+                    Meio
+                  </div>
+                  <div className='esquerdaBaixo'>
+                    Baixo
+                  </div>
+                </div>
+                <div className='direita'>
+                  <div className='divBlue'>
+                    <div className='blueEsquerda'>
+                      <p>Sexta</p>
+                      <p>11/10/2019</p>
+                    </div >
+                    <div className='blueMeio'>
+                      <WiDaySunny size={70}></WiDaySunny>
+                      <span>Ensolarado</span>
                     </div>
-
-                    <div className='direita'>
-                      <div className='dias'>
-                        <div className="azul">
-                          <ul className='mostraDias'>
-                            <li>
-                              <span>Sexta</span>
-                            </li>                          
-                            <li>                          
-                              <span>11/10/2019</span>
-                            </li>
-                            <li>
-                              <WiDaySunny size={30}></WiDaySunny>
-                              <span>Ensolarado</span>
-                            </li>
-                            <li>
-                              <FaTemperatureLow></FaTemperatureLow>
-                               <span>15°</span>
-                             </li>
-                             <li>
-                              <FaTemperatureHigh></FaTemperatureHigh>
-                              <span>25°</span>
-                             </li>
-                          </ul>                          
-                        </div>
-                        <div className='laranja'>
-                        <ul className='mostraDias'>
-                            <li>
-                              <span>Sexta</span>
-                            </li>                          
-                            <li>                          
-                              <span>11/10/2019</span>
-                            </li>
-                            <li>
-                              <WiDaySunny size={30}></WiDaySunny>
-                              <span>Ensolarado</span>
-                            </li>
-                            <li>
-                              <FaTemperatureLow></FaTemperatureLow>
-                               <span>15°</span>
-                             </li>
-                             <li>
-                              <FaTemperatureHigh></FaTemperatureHigh>
-                              <span>25°</span>
-                             </li>
-                          </ul>                  
-                        </div>
-                        <div className='verde'>
-                        <ul className='mostraDias'>
-                            <li>
-                              <span>Sexta</span>
-                            </li>                          
-                            <li>                          
-                              <span>11/10/2019</span>
-                            </li>
-                            <li>
-                              <WiDaySunny size={30}></WiDaySunny>
-                              <span>Ensolarado</span>
-                            </li>
-                            <li>
-                              <FaTemperatureLow></FaTemperatureLow>
-                               <span>15°</span>
-                             </li>
-                             <li>
-                              <FaTemperatureHigh></FaTemperatureHigh>
-                              <span>25°</span>
-                             </li>
-                          </ul>                  
-                        </div>
-                        <div className='roxo'>
-                        <ul className='mostraDias'>
-                            <li>
-                              <span>Sexta</span>
-                            </li>                          
-                            <li>                          
-                              <span>11/10/2019</span>
-                            </li>
-                            <li>
-                              <WiDaySunny size={30}></WiDaySunny>
-                              <span>Ensolarado</span>
-                            </li>
-                            <li>
-                              <FaTemperatureLow></FaTemperatureLow>
-                               <span>15°</span>
-                             </li>
-                             <li>
-                              <FaTemperatureHigh></FaTemperatureHigh>
-                              <span>25°</span>
-                             </li>
-                          </ul>                  
-                        </div>
-                        <div className='vermelho'>
-                        <ul className='mostraDias'>
-                            <li>
-                              <span>Sexta</span>
-                            </li>                          
-                            <li>                          
-                              <span>11/10/2019</span>
-                            </li>
-                            <li>
-                              <WiDaySunny size={30}></WiDaySunny>
-                              <span>Ensolarado</span>
-                            </li>
-                            <li>
-                              <FaTemperatureLow></FaTemperatureLow>
-                               <span>15°</span>
-                             </li>
-                             <li>
-                              <FaTemperatureHigh></FaTemperatureHigh>
-                              <span>25°</span>
-                             </li>
-                          </ul>                  
-                        </div>
+                    <div className='blueDireita'>
+                      <div className='blueDireitaCima'>
+                        <FaTemperatureLow size={25}></FaTemperatureLow>
+                        <span>Min.</span>
+                        <span>15°</span>
+                      </div>
+                      <div className='blueDireitaBaixo'>
+                        <FaTemperatureHigh size={25}></FaTemperatureHigh>
+                        <span>Max.</span>
+                        <span>25°</span>
                       </div>
                     </div>
-                </div>     
-                
-          </div>
-        </div>
+                  </div>
+                  <div className='divOrange'>
+                  <div className='orangeEsquerda'>
+                      <p>Sábado</p>
+                      <p>12/10/2019</p>
+                    </div >
+                    <div className='orangeMeio'>
+                      <WiDaySunny size={70}></WiDaySunny>
+                      <span>Ensolarado</span>
+                    </div>
+                    <div className='orangeDireita'>
+                    <div className='orangeDireitaCima'>
+                        <FaTemperatureLow size={25}></FaTemperatureLow>
+                        <span>Min.</span>
+                        <span>18°</span>
+                      </div>
+                      <div className='orangeDireitaBaixo'>
+                        <FaTemperatureHigh size={25}></FaTemperatureHigh>
+                        <span>Max.</span>
+                        <span>31°</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='divGreen'>
+                  <div className='greenEsquerda'>
+                      <p>Domingo</p>
+                      <p>13/10/2019</p>
+                    </div >
+                    <div className='greenMeio'>
+                      <BsCloudLightning size={48}></BsCloudLightning>
+                      <span>Tempestade</span>
+                    </div>
+                    <div className='greenDireita'>
+                    <div className='greenDireitaCima'>
+                        <FaTemperatureLow size={25}></FaTemperatureLow>
+                        <span>Min.</span>
+                        <span>13°</span>
+                      </div>
+                      <div className='greenDireitaBaixo'>
+                        <FaTemperatureHigh size={25}></FaTemperatureHigh>
+                        <span>Max.</span>
+                        <span>23°</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='divPurple'>
+                  <div className='purpleEsquerda'>
+                      <p>Segunda</p>
+                      <p>14/10/2019</p>
+                    </div >
+                    <div className='purpleMeio'>
+                      <BsCloudRain size={48}></BsCloudRain>
+                      <span>Chuvoso</span>
+                    </div>
+                    <div className='purpleDireita'>
+                    <div className='purpleDireitaCima'>
+                        <FaTemperatureLow size={25}></FaTemperatureLow>
+                        <span>Min.</span>
+                        <span>15°</span>
+                      </div>
+                      <div className='purpleDireitaBaixo'>
+                        <FaTemperatureHigh size={25}></FaTemperatureHigh>
+                        <span>Max.</span>
+                        <span>24°</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='divRed'> 
+                  <div className='redEsquerda'>
+                      <p>Terça</p>
+                      <p>15/10/2019</p>
+                    </div >
+                    <div className='redMeio'>
+                      <BsCloudy size={50}></BsCloudy>
+                      <span>Nublado</span>
+                    </div>
+                    <div className='redDireita'>
+                    <div className='redDireitaCima'>
+                        <FaTemperatureLow size={25}></FaTemperatureLow>
+                        <span>Min.</span>
+                        <span>15°</span>
+                      </div>
+                      <div className='redDireitaBaixo'>
+                        <FaTemperatureHigh size={25}></FaTemperatureHigh>
+                        <span>Max.</span>
+                        <span>24°</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>      
+            </div>
 
-        <div className='rodape'>
-          <a href=''>
-            <IoMdHome></IoMdHome>
-          </a>
-          <a href=''>
-            <IoIosArrowBack></IoIosArrowBack>
-          </a>
-            <span>1 de 2</span>
-          <a>
-            <IoIosArrowForward></IoIosArrowForward>
-          </a>
+            <div className='footer'>
+              <ul>
+                <li>
+                  <a href=''>
+                    <IoMdHome size={20}></IoMdHome>
+                  </a>
+                </li>
+                <li>
+                  <a href=''>
+                  <IoIosArrowBack size={20}></IoIosArrowBack>
+                  </a>
+                </li>
+                <li>
+                  <span>1 de 2</span>
+                </li>
+                <li>
+                  <a href=''><IoIosArrowForward size={20}></IoIosArrowForward></a>
+                </li>
+              </ul>
+            </div>
+      
+
+
         </div>
-    </div>
   );
 }
 
