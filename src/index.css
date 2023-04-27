@@ -120,6 +120,130 @@
   flex-direction: column;
 }
 
+.esquerdaCima{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width: 85%;
+  height: 15%;
+}
+
+.minMax{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minMax span{
+  font-size: 16px;
+
+}
+
+.minimo{
+  display: block;
+  padding: 5px;
+}
+
+.maximo{
+  display: block;
+  padding: 5px;
+}
+
+.campinas span{
+  font-size: 20px;
+  color: #4B6584;
+}
+
+.campinas p{
+  font-size: 15px;
+  color: #4B6584;
+}
+
+.esquerdaMeio{
+  width: 95%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.esquerdaMeioEsquerda{
+  height: 270px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+.termo {
+  display: flex;
+  align-items:start;
+}
+
+.termo span{
+  font-size: 150px;
+  color: #4B6584;
+}
+
+.termo p{
+  font-size: 17px;
+  color: #4B6584;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.sensacao p{
+  color: #4B6584;
+  border: 1px solid #2BCBBA;
+  font-size: 17px;
+  padding: 3px 30px;
+  border-radius: 15px;
+}
+
+.nublado {
+  color: #4B6584;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  height: 270px;
+  width: 280px;
+}
+
+.nublado p{
+  font-size: 23px;
+}
+
+.esquerdaBaixo{
+  width: 90%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.umidade{
+  box-shadow: 0 0 1px;
+  margin: 0 0 10px 20px;
+  width: 165px;
+  height: 190px;
+}
+
+.velocidade{
+  box-shadow: 0 0 1px;
+  width: 165px;
+  height: 190px;
+  margin: 0 0 10px 0px;
+}
+
+.direcao{
+  box-shadow: 0 0 1px;
+  width: 165px;
+  height: 190px;
+  margin: 0 0 10px 0px;
+}
+
 .direita{
   height: 100%;
   width: 43%;

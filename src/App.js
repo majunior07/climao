@@ -1,9 +1,9 @@
 import react from 'react';
 import { Link } from 'react-router-dom';
-import {FaMicrosoft, FaQuestionCircle, FaAngleRight, FaExpandAlt, FaUmbrella, FaSearch, FaTemperatureLow, FaTemperatureHigh } from 'react-icons/fa'
+import {FaMicrosoft, FaQuestionCircle, FaAngleRight, FaExpandAlt, FaUmbrella, FaSearch, FaTemperatureLow, FaTemperatureHigh, FaPercent } from 'react-icons/fa'
 import { WiDaySunny } from 'react-icons/wi'
 import { IoMdHome, IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { SlLocationPin } from 'react-icons/sl';
+import { SlLocationPin, SlDrop } from 'react-icons/sl';
 import { TiThermometer } from 'react-icons/ti';
 import { SiAdobecreativecloud } from 'react-icons/si';
 import { BsCloudLightning , BsCloudRain, BsCloudy } from'react-icons/bs';
@@ -65,13 +65,76 @@ function App(){
               <div className='central'>
                 <div className='esquerda'>
                   <div className='esquerdaCima'>
-                    climao
+                    <div className='campinas'>
+                      <SlLocationPin color='#2BCBBA' size={30}></SlLocationPin>
+                      <span>Campinas</span>
+                      <p>Quin, 10 de outubro de 2019</p>
+                    </div>
+                    <div className='minMax'>
+                      <div className='minimo'>
+                        <FaTemperatureLow color='#2BCBBA' size={25}></FaTemperatureLow>
+                        <span>Min.</span>
+                        <span>15°</span>
+                      </div>
+                      <div className='maximo'>
+                        <FaTemperatureHigh color='#2BCBBA' size={25}></FaTemperatureHigh>
+                        <span>Max.</span>
+                        <span>31°</span>
+                      </div>
+                    </div>
                   </div>
                   <div className='esquerdaMeio'>
-                    Meio
+                    <div className='esquerdaMeioEsquerda'>
+                        <div className='termo'>
+                          <div>
+                           <TiThermometer color='#2BCBBA' size={35} ></TiThermometer>
+                          </div>
+                          <div>
+                            <span>23°</span>
+                          </div>                     
+                        </div>
+                        <div className='sensacao'>
+                          <p>Sensação térmica 22°</p>  
+                        </div>                 
+                      </div>
+                    <div className='nublado'>
+                      <BsCloudy color='#2BCBBA' size={180}></BsCloudy>
+                      <p>Nublado</p>
+                    </div>
                   </div>
                   <div className='esquerdaBaixo'>
-                    Baixo
+                    <div className='umidade'>
+                      <div>
+                          <div>
+                            <SlDrop></SlDrop>
+                            <FaPercent></FaPercent>
+                          </div>       
+                          <div>
+                            <p>Umidade</p>                        
+                          </div> 
+                      </div>     
+                      <div>
+                        <p>66%</p>
+                      </div>         
+                    </div>
+                    <div className='velocidade'>
+                      <div>
+                        aaaaaa
+                        <p>Velocidade do vento</p>
+                      </div>
+                      <div>
+                        <p>23km/h</p>
+                      </div>
+                    </div>
+                    <div className='direcao'>
+                    <div>
+                        aaaaaa
+                        <p>Direção do vento</p>
+                      </div>
+                      <div>
+                        <p>ND</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className='direita'>
