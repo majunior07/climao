@@ -6,7 +6,8 @@ import { IoMdHome, IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { SlLocationPin, SlDrop } from 'react-icons/sl';
 import { TiThermometer } from 'react-icons/ti';
 import { SiAdobecreativecloud } from 'react-icons/si';
-import { BsCloudLightning , BsCloudRain, BsCloudy } from'react-icons/bs';
+import { BsCloudLightning , BsCloudRain, BsCloudy, BsWind } from'react-icons/bs';
+import { TbWindsock } from 'react-icons/tb';
 import Assets from './Assets';
 
 
@@ -65,28 +66,36 @@ function App(){
               <div className='central'>
                 <div className='esquerda'>
                   <div className='esquerdaCima'>
-                    <div className='campinas'>
-                      <SlLocationPin color='#2BCBBA' size={30}></SlLocationPin>
-                      <span>Campinas</span>
-                      <p>Quin, 10 de outubro de 2019</p>
-                    </div>
+                    <div className='campinas'>                      
+                        <div className='campinas2'>
+                          <SlLocationPin color='#2BCBBA' size={30}></SlLocationPin>
+                          <div className='campinas3'>
+                            <strong><span>Campinas</span></strong>
+                            <p>Quin, 10 de outubro de 2019</p>
+                          </div>                     
+                        </div>  
+                      </div>
                     <div className='minMax'>
                       <div className='minimo'>
                         <FaTemperatureLow color='#2BCBBA' size={25}></FaTemperatureLow>
-                        <span>Min.</span>
+                        <div className='minimo2'>
+                        <strong><span>Min.</span></strong>
+                        </div>                        
                         <span>15°</span>
                       </div>
                       <div className='maximo'>
                         <FaTemperatureHigh color='#2BCBBA' size={25}></FaTemperatureHigh>
-                        <span>Max.</span>
-                        <span>31°</span>
+                        <div className='maximo2'>
+                          <strong><span>Max.</span></strong>
+                        </div>                       
+                        <span>26°</span>
                       </div>
                     </div>
                   </div>
                   <div className='esquerdaMeio'>
                     <div className='esquerdaMeioEsquerda'>
                         <div className='termo'>
-                          <div>
+                          <div className='termo2'>
                            <TiThermometer color='#2BCBBA' size={35} ></TiThermometer>
                           </div>
                           <div>
@@ -99,40 +108,40 @@ function App(){
                       </div>
                     <div className='nublado'>
                       <BsCloudy color='#2BCBBA' size={180}></BsCloudy>
-                      <p>Nublado</p>
+                      <strong><p>Nublado</p></strong>
                     </div>
                   </div>
                   <div className='esquerdaBaixo'>
                     <div className='umidade'>
-                      <div>
-                          <div>
-                            <SlDrop></SlDrop>
-                            <FaPercent></FaPercent>
+                      <div className='umidade2'>
+                          <div className='umidade3'>
+                            <SlDrop size={20} color='#2BCBBA'></SlDrop>
+                            <FaPercent size={20} color='#2BCBBA'></FaPercent>
                           </div>       
-                          <div>
+                          <div className='umidade4'>
                             <p>Umidade</p>                        
                           </div> 
                       </div>     
-                      <div>
-                        <p>66%</p>
+                      <div className='umidade5'>
+                        <strong><p>66%</p></strong>
                       </div>         
                     </div>
                     <div className='velocidade'>
-                      <div>
-                        aaaaaa
+                      <div className='velocidade2'>
+                        <BsWind size={30} color='#2BCBBA'></BsWind>
                         <p>Velocidade do vento</p>
                       </div>
-                      <div>
-                        <p>23km/h</p>
+                      <div className='velocidade3'>
+                        <strong><p>23km/h</p></strong>
                       </div>
                     </div>
                     <div className='direcao'>
-                    <div>
-                        aaaaaa
+                    <div className='direcao1'>
+                        <TbWindsock size={30} color='#2BCBBA'></TbWindsock>
                         <p>Direção do vento</p>
-                      </div>
-                      <div>
-                        <p>ND</p>
+                    </div>
+                      <div className='direcao2'>
+                        <strong><p>ND</p></strong>
                       </div>
                     </div>
                   </div>
